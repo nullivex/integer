@@ -389,10 +389,10 @@ private:
 	static const int64_t MIN_VALUE = -0x8000000000000000LL;
 	static const int64_t MAX_SAFE = 9007199254740991LL;
 	static const int64_t MIN_SAFE = -9007199254740991LL;
-	static constexpr double MAX_SAFE_DOUBLE = (double)MAX_SAFE;
-	static constexpr double MIN_SAFE_DOUBLE = (double)MIN_SAFE;
-	static constexpr uint64_t I64_in_U64 = (uint64_t)MAX_VALUE;
-	static constexpr uint64_t U32_in_U64 = (uint64_t)0xffffffffLU;
+	static constexpr double MAX_SAFE_DOUBLE = MAX_SAFE;
+	static constexpr double MIN_SAFE_DOUBLE = MIN_SAFE;
+	static constexpr uint64_t I64_in_U64 = MAX_VALUE;
+	static constexpr uint64_t U32_in_U64 = 0xffffffffLU;
 	static const size_t STRING_BUFFER_LENGTH = 72;
 	static v8::Persistent<v8::Function> constructor;
 	static v8::Persistent<v8::FunctionTemplate> constructorTemplate;
